@@ -8,6 +8,9 @@ var result="My name is: " + name + "and my age is: " + age
 // 1) WRITE YOUR CODE UNDER THIS LINE
 
 
+const name = "Alex";
+const age = 25;
+let result=`My name is: ${name} and my age is: ${age}`
 
 
 
@@ -25,3 +28,13 @@ var object={
 }
  */
 // 2) WRITE YOUR CODE UNDER THIS LINE
+
+
+const food="Fried Chicken";
+const color="Blue";
+let object={
+  food,
+  color,
+  multi=(a,b) => {a*b}
+}
+

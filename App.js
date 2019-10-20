@@ -22,14 +22,18 @@ export default class App extends Component {
       });
   }
 
-  // Q2: we have 6 errors here please fix them [6 pt]
+  // Q2: we have 6 errors here please fix them [6 pt]123456
   addTodoItem = newTask => {
     axios
-      .get('getTasks')
+      // .get('getTasks')
+      .post('/addNewTasks',newTask)
       .then(res => {
-        const result = res;
-        this.state.tasks = result;
+        // const result = res;
+        const tasks = res.data;
+        // this.state.tasks = result;
+        this.setState ({tasks});
       })
+      
       .catch(error => {
         console.log(error);
       });
